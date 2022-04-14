@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #bebebe;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 10rem auto;
+  grid-template-rows: auto;1.5rem;
+  grid-template-areas:
+   "left center right"
+   ". center ."
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  grid-area: center;
+  margin: 0;
+  z-index: 1;
+}
+
+h2 {
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #323232;
+  padding-left: 1rem;
+}
+nav ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+nav {
+ grid-column: 1 / -1;
+ grid-row: 1;
+ background-color: bd027d;
+}
+
+li a {
+  text-decoration: none;
+  background-color: #bd027d;
+  padding: .8rem
+  margin: .5rem;
+  color: #fff
+  border: 2px solid #960062;
+  border-radius: 6px
+  font-family: "PT Sans Narrow", sans-serif;
+  font-variant: ;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 100%;
+}
+
+section ul {
+  display: grid;
+  grid-template-columns:
+  list-style-type: none;
+  padding: 0;
+}
+
+section li {
+  background-color: #ccc;
+  margin: 1.5rem;
+  gap: 1rem;
+  border: 2px;
+  border-radius: 6px;
+}
+
+main {
+  background-color: #bebebe;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.25rem;
+  background-color: #bebebe;
+  padding: 1.125rem;
+  order: 1;
+  grid-area: bottom;
+}
+
+div strong {
+  font-style: italic;
+  text-align: right;
+  order: 1;
+  color: #3233232;
+  font-weight: lighter;
+}
+
+div {
+  order: -3
+  justify-content: flex-end;
+  display: flex;
+  padding: .5em;
+  background-color: #bebebe;
+  margin-bottom: .5em;
+  margin-top: .5em;
+  margin-left: 20rem;
+  border-radius: 1em 0 0 1em;
+  grid-area: top;
+}
